@@ -1,6 +1,7 @@
 Resource: SupplyDelivery
-Id: SupplyDelivery
-Description: "Record of delivery of what is supplied."
+Profile: SupplyDeliveryCustom
+Id: SupplyDeliveryCustom
+Description: "Custom profile of SupplyDelivery for EAHP IG"
 * ^meta.lastUpdated = "2023-03-26T15:21:02.749+11:00"
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-category"
 * ^extension[=].valueString = "Clinical.Request &amp; Response"
@@ -12,7 +13,7 @@ Description: "Record of delivery of what is supplied."
 * ^extension[=].valueCode = #patient
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #oo
-* ^url = "http://hl7.org/fhir/StructureDefinition/SupplyDelivery"
+* ^url = "http://afriscic.github.io/fhir/StructureDefinition/SupplyDelivery"
 * ^status = #draft
 * ^experimental = false
 * ^date = "2023-03-26T15:21:02+11:00"

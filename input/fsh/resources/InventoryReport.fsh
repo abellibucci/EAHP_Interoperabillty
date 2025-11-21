@@ -1,6 +1,7 @@
 Resource: InventoryReport
-Id: InventoryReport
-Description: "A report of inventory or stock items."
+Profile: InventoryReportCustom
+Id: InventoryReportCustom
+Description: "Custom profile of InventoryReport for EAHP IG"
 * ^meta.lastUpdated = "2023-03-26T15:21:02.749+11:00"
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-category"
 * ^extension[=].valueString = "Clinical.Request &amp; Response"
@@ -12,7 +13,7 @@ Description: "A report of inventory or stock items."
 * ^extension[=].valueCode = #business
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #oo
-* ^url = "http://hl7.org/fhir/StructureDefinition/InventoryReport"
+* ^url = "http://afriscic.github.io/fhir/StructureDefinition/InventoryReport"
 * ^status = #draft
 * ^experimental = true
 * ^date = "2023-03-26T15:21:02+11:00"

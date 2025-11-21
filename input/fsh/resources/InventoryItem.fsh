@@ -1,6 +1,7 @@
 Resource: InventoryItem
-Id: InventoryItem
-Description: "functional description of an inventory item used in inventory and supply-related workflows."
+Profile: InventoryItemCustom
+Id: InventoryItemCustom
+Description: "Custom profile of InventoryItem for EAHP IG"
 * ^meta.lastUpdated = "2023-03-26T15:21:02.749+11:00"
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-category"
 * ^extension[=].valueString = "Clinical.Request &amp; Response"
@@ -12,7 +13,7 @@ Description: "functional description of an inventory item used in inventory and 
 * ^extension[=].valueCode = #business
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #oo
-* ^url = "http://hl7.org/fhir/StructureDefinition/InventoryItem"
+* ^url = "http://afriscic.github.io/fhir/StructureDefinition/InventoryItem"
 * ^status = #draft
 * ^experimental = true
 * ^date = "2023-03-26T15:21:02+11:00"
