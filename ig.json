@@ -1,0 +1,23 @@
+{
+    "igVersion": "1.0.0",
+    "status": "draft",
+    "copyrightYear": "2025",
+    "ballotDate": "2025-11-21",
+    "fhirVersion": ["5.0.0"],
+    "license": "CC0-1.0",
+    "title": "EAHP IG",
+    "canonical": "http://afriscic.github.io/fhir/StructureDefinition",
+    "page": [
+    {
+        "source": "pagecontent/index.md",
+        "name": "index.html",
+        "title": "EAHP FHIR IG"
+    },
+    {
+        "source": "toc.html",
+        "name": "toc.html",
+        "title": "Table of Contents",
+        "generation": "html"
+    }
+    ]
+}
