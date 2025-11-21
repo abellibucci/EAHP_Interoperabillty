@@ -1,4 +1,5 @@
 Resource: InventoryItem
+Parent: InventoryItem
 Profile: InventoryItemCustom
 Id: InventoryItemCustom
 Description: "Custom profile of InventoryItem for EAHP IG"

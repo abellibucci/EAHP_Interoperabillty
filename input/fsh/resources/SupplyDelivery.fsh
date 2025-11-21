@@ -1,4 +1,5 @@
 Resource: SupplyDelivery
+Parent: SupplyDelivery
 Profile: SupplyDeliveryCustom
 Id: SupplyDeliveryCustom
 Description: "Custom profile of SupplyDelivery for EAHP IG"

@@ -1,4 +1,5 @@
 Resource: SupplyRequest
+Parent: SupplyRequest
 Profile: SupplyRequestCustom
 Id: SupplyRequestCustom
 Description: "Custom profile of SupplyRequest for EAHP IG"

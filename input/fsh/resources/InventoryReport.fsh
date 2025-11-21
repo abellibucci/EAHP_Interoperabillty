@@ -1,4 +1,5 @@
-Resource: InventoryReport
+Resource: SupplyDelivery
+Parent: SupplyDelivery
 Profile: InventoryReportCustom
 Id: InventoryReportCustom
 Description: "Custom profile of InventoryReport for EAHP IG"
