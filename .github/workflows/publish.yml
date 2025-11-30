@@ -38,9 +38,6 @@ jobs:
         with:
           ruby-version: '3.2'
           bundler-cache: true
-
-      - name: Install Jekyll
-        run: gem install jekyll bundler
       
       - name: Cache IG Publisher
         id: cache-publisher
