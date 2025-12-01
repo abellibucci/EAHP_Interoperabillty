@@ -37,6 +37,19 @@ Lists Brufen as an inventory item, with attributes like packaging, identificatio
 ### Medication-Brufen-Example
 Defines the Brufen medication resource, including active ingredients, strength, and form. Ensures consistent medication identification across systems.
 
+## Known TODOs
+
+- `input/fsh/resources/SupplyRequest.fsh`:  
+  `// TODO: Add validation for requester field`
+
+- `input/fsh/examples/InventoryReport-Brufen-Exapmle.fsh`:  
+  `// TODO: Update example to reflect new inventory structure`
+
+- `input/fsh/resources/InventoryItem.fsh`:  
+  `// TODO: Add manufacturer details to InventoryItem profile`
+
+(Add more TODOs as needed from your codebase.)
+
 ## Build & Publish
 
 This IG uses [SUSHI](https://fshschool.org/docs/sushi/) to generate FHIR definitions from FSH files.
