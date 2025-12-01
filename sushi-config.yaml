@@ -9,4 +9,10 @@ version: "0.0.1"
 packageId: "org.eahp.interoperability"
 copyrightYear: 2025
 releaseLabel: "0.0.1"
-dependencies: { hl7.fhir.r5.core: 5.0.0 }
+dependencies: 
+  hl7.fhir.r5.core: 5.0.0
+menu:
+  Home: index.html
+  Artifacts: artifacts.html
+  Downloads: downloads.html
+  Table of Contents: toc.html
