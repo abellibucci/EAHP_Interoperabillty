@@ -9,7 +9,7 @@ Description: "InventoryItem instance representing a pack of Brufen 30x600mg tabl
 * instance.identifier.value = "01050991510150511078241PC\u001D17260530211HXNA4G4VM"
 * instance.lotNumber = "78241PC"
 * instance.expiry = "2026-05-30"
-* productReference = Reference(05099151015051)
+* productReference = Reference(M00345)
 
 Instance: e2d2688f-2854-48ac-a87a-cb6f4105b36c
 InstanceOf: InventoryItemEAHPInteroperability
@@ -22,7 +22,7 @@ Description: "InventoryItem instance representing a pack of Brufen 30x600mg tabl
 * instance.identifier.value = "1HXP6FPMG1"
 * instance.lotNumber = "78241PC"
 * instance.expiry = "2026-05-30"
-* productReference = Reference(05099151015051)
+* productReference = Reference(M00345)
 
 Instance: 9042a2ba-724c-47e4-b64c-6054da9dd4fa
 InstanceOf: InventoryItemEAHPInteroperability
@@ -35,4 +35,4 @@ Description: "InventoryItem instance representing a unit dose of Brufen 30x600mg
 * instance.identifier.value = "01050991510150511078241PC\u001D17260530211HXRG3R6T3"
 * instance.lotNumber = "78241PC"
 * instance.expiry = "2026-05-30"
-* productReference = Reference(05099151015051)
+* productReference = Reference(M00345)
