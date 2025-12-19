@@ -1,7 +1,7 @@
 Profile: InventoryItemEAHPInteroperability
 Title: "InventoryItem EAHP Interoperability"
 Parent: InventoryItem
-Description: "InventoryItem profile for EAHP Interoperability SIG."
+Description: "Defines the specific logistical unit managed within EAHP interoperability workflows. This resource represents the physical base stock unit as recognized by automated inventory systems. The granularity of this unit is determined by the automation context: it represents a complete commercial pack for whole-pack handling robots, or a single unit dose for unit-dose dispensing robots. Product details (such as name) are derived from the referenced product, while this resource tracks the instance-specific status, location, and expiry"
 
 * name MS
 * inventoryStatus MS
