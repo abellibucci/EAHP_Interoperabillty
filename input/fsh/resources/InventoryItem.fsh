@@ -15,6 +15,7 @@ Description: "Defines the specific logistical unit managed within EAHP interoper
 * netContent MS
 * instance 1..1
 * instance.identifier MS
+  * ^short = "This is a unique identifier of the physical stock base unit, like a serial number. For full pack robots, this is the whole 2D barcode read"
 * instance.lotNumber MS
 * instance.expiry MS
 * instance.location MS
