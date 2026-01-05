@@ -8,11 +8,13 @@ Description: "Defines the specific logistical unit managed within EAHP interoper
   * ^definition = "The name is strictly forbidden to prevent data duplication. The display name must be retrieved from the resolved productReference."
 * inventoryStatus MS
 * baseUnit MS
-* baseUnit 1..1
-  * ^short = "The strictly defined unit of counting (e.g., PACK or UNIT)"
-  * ^definition = "Mandatory unit that defines the granularity of this item."
-  //TODO: define a way to code the baseUnit possible values. For example PACK and UNIT
+* baseUnit 1..1 MS
+* baseUnit = EAHPLogisticsUnitCS#indivisible-logistical-unit
+  * ^short = "Atomic Logistical Unit"
+  * ^definition = "Mandatory. Defines the granularity of this item as the smallest, indivisible unit handled by the automation system. This abstracts away the physical form (tablet, vial, etc.) and focuses purely on the logistical count of '1'. An Atomic Logistical unit can physically be a tablet, a vial, a syrup bottle, a cream tube etc., but NOT a milligram, spoon, pack, or box."
 * netContent MS
+* netContent 1..1
+* netContent only EAHPLogisticalQuantity
 * instance 1..1
 * instance.identifier MS
   * ^slicing.discriminator.type = #pattern
