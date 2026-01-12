@@ -8,3 +8,4 @@ Description: "Example of a supply request for Ibuprofen Tablet 500mg tablets usi
 * authoredOn = "2025-11-30T10:30:00Z"
 * requester = Reference(Device/adc-device) "Automated Dispensing Cabinet"
 * deliverTo = Reference(Location/example-pharmacy) "Hospital Pharmacy"
+* deliverFrom = Reference(Organization/Sinteco) "Sinteco Udr"

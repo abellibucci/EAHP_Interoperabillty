@@ -45,7 +45,8 @@ Description: "Defines the specific logistical unit managed within EAHP interoper
 * instance.expiry MS
 * instance.location MS
 * inventoryStatus MS
-* productReference MS
+* productReference only Reference(Medication)
+* productReference MS 
 
 CodeSystem: EAHPIdentifierTypeCS
 Id: eahp-identifier-type-cs

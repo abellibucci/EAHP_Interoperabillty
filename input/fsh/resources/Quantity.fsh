@@ -5,7 +5,7 @@ Title: "EAHP Logistical Quantity"
 Description: "A specialized quantity that strictly counts Indivisible Logistical Units (e.g. 1 tablet, 30 vials)."
 
 * system 1..1
-* system = "http://example.org/CodeSystem/eahp-logistics-unit-cs" // TODO define the correct URL
+* system = "https://afriscic.github.io/EAHP_Interoperabillty/CodeSystem-eahp-logistics-unit-cs" // TODO define the correct URL
 * code 1..1
 * code = #indivisible-logistical-unit (exactly)
 * unit 1..1
