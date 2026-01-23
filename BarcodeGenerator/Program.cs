@@ -35,8 +35,6 @@ var writer = new BarcodeWriterGeneric
     Options = options
 };
 
-
-
 foreach (var barcode in barcodes)
 {
     var path = Path.Combine(outputDir, barcode.GTIN);

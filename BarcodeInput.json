@@ -2,22 +2,16 @@
   {
     "No": 10,
     "GTIN": "02012345678903",
-    "BATCH": "BARCELONA2026",
-    "EXP": "250320",
-    "SN": "edOGhT0RNs"
+    "BATCH": "BARCELONA2026"
   },
   {
     "No": 5,
     "GTIN": "02011111111118",
-    "BATCH": "EAHP",
-    "EXP": "250320",
-    "SN": "zGoi8M8u8I"
+    "BATCH": "EAHP"
   },
   {
     "No": 2,
     "GTIN": "02064721898122",
-    "BATCH": "CONGRESS",
-    "EXP": "250320",
-    "SN": "48hlwgkWqL"
+    "BATCH": "CONGRESS"
   }
 ]
