@@ -13,7 +13,7 @@ TODO
 
 ### Integration Overview
 An overview of the integration with some sample message is here:
-[Overview and sample messages](/Overview)
+[Overview and sample messages](Overview.html)
 
 ### About FHIR Shorthand
 
