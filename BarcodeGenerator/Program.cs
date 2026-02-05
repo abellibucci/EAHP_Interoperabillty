@@ -257,15 +257,13 @@ static void UpdateSushiConfig(string configPath, List<string> generatedResources
     }
     generatedExamplesNode.Add("resources", resourcesSequence);
 
-    // Update or add GeneratedExamples group
+    // Remove existing GeneratedExamples group (if any) and re-add at the end
+    // This ensures it always appears last in the artifacts page
     if (groupsNode.Children.ContainsKey("GeneratedExamples"))
     {
-        groupsNode.Children["GeneratedExamples"] = generatedExamplesNode;
+        groupsNode.Children.Remove("GeneratedExamples");
     }
-    else
-    {
-        groupsNode.Children.Add("GeneratedExamples", generatedExamplesNode);
-    }
+    groupsNode.Children.Add("GeneratedExamples", generatedExamplesNode);
 
     // Write back to file
     using var writer = new StreamWriter(configPath);
