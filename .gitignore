@@ -484,6 +484,9 @@ $RECYCLE.BIN/
 # Claude Code
 CLAUDE.md
 .claude/
-
 # FHIR IG Publisher
-fsh-generated/
+/fsh-generated
+/template
+/input-cache
+/output
+/temp
