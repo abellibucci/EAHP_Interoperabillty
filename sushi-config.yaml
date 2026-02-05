@@ -14,4 +14,5 @@ dependencies:
 menu:
   Index: index.html
   Artifacts: artifacts.html
+  Generated Examples: generated-examples.html
   Table of Contents: toc.html

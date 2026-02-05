@@ -1,0 +1,13 @@
+{
+  "resourceType": "Medication",
+  "id": "M00345",
+  "meta": {
+    "profile": [
+      "https://afriscic.github.io/EAHP_Interoperabillty//StructureDefinition/MedicationEAHP"
+    ]
+  },
+  "code": {
+    "text": "GlobalPharma Ibuprofen 600mg Tablets"
+  },
+  "status": "active"
+}

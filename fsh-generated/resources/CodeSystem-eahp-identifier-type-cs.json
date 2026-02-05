@@ -1,0 +1,23 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "EAHPIdentifierTypeCS",
+  "id": "eahp-identifier-type-cs",
+  "title": "EAHP Identifier Types",
+  "description": "Custom identifier types for pharmacy automation.",
+  "url": "https://afriscic.github.io/EAHP_Interoperabillty//CodeSystem/eahp-identifier-type-cs",
+  "concept": [
+    {
+      "code": "FMD_BARCODE",
+      "display": "Raw Scan Data",
+      "definition": "The raw, unparsed data string captured from the package barcode (e.g., GS1 DataMatrix). This string contains the full set of encoded data (GTIN, Lot, Expiry, Serial) including hidden group separators. It is the primary technical key for Falsified Medicines Directive (FMD) verification."
+    },
+    {
+      "code": "PRODUCT_BARCODE",
+      "display": "Product Barcode",
+      "definition": "The portion of the barcode identifying the product (e.g. GTIN, PZN)."
+    }
+  ],
+  "count": 2
+}

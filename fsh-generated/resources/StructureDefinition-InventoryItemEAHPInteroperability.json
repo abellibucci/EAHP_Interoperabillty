@@ -1,0 +1,193 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "InventoryItemEAHPInteroperability",
+  "url": "https://afriscic.github.io/EAHP_Interoperabillty//StructureDefinition/InventoryItemEAHPInteroperability",
+  "name": "InventoryItemEAHPInteroperability",
+  "title": "InventoryItem EAHP Interoperability",
+  "status": "draft",
+  "description": "Defines the specific logistical unit managed within EAHP interoperability workflows. This resource represents the physical base stock unit as recognized by automated inventory systems. The granularity of this unit is determined by the automation context: it may represent a pack (whether complete or partial) for box-handling robots, a single unit dose for dispensing robots, or a compounding container (such as an IV bag) for compounding robots. Product details (such as name) are derived from the referenced product, while this resource tracks the instance-specific status, location, and expiry.",
+  "fhirVersion": "5.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "InventoryItem",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/InventoryItem",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "InventoryItem.name",
+        "path": "InventoryItem.name",
+        "short": "Name is removed to enforce usage of productReference",
+        "definition": "The name is strictly forbidden to prevent data duplication. The display name must be retrieved from the resolved productReference.",
+        "max": "0"
+      },
+      {
+        "id": "InventoryItem.inventoryStatus",
+        "path": "InventoryItem.inventoryStatus",
+        "mustSupport": true
+      },
+      {
+        "id": "InventoryItem.baseUnit",
+        "path": "InventoryItem.baseUnit",
+        "short": "Atomic Logistical Unit",
+        "definition": "Mandatory. Defines the granularity of this item as the smallest, indivisible unit handled by the automation system. This abstracts away the physical form (tablet, vial, etc.) and focuses purely on the logistical count of '1'. An Atomic Logistical unit can physically be a tablet, a vial, a syrup bottle, a cream tube etc., but NOT a milligram, spoon, pack, or box.",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "indivisible-logistical-unit",
+              "system": "https://afriscic.github.io/EAHP_Interoperabillty//CodeSystem/eahp-logistics-unit-cs"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "InventoryItem.netContent",
+        "path": "InventoryItem.netContent",
+        "min": 1,
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "https://afriscic.github.io/EAHP_Interoperabillty//StructureDefinition/eahp-logistical-quantity"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "InventoryItem.instance",
+        "path": "InventoryItem.instance",
+        "min": 1
+      },
+      {
+        "id": "InventoryItem.instance.identifier",
+        "path": "InventoryItem.instance.identifier",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "type"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "List of identifiers (Raw Scan, Serial, Product Barcode or Vendor ID)",
+        "mustSupport": true
+      },
+      {
+        "id": "InventoryItem.instance.identifier:rawScan",
+        "path": "InventoryItem.instance.identifier",
+        "sliceName": "rawScan",
+        "short": "Raw 2D Barcode Data (e.g. GS1, IFA ASC)",
+        "definition": "The unparsed, full string read from a commercial pack barcode. Globally unique.",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "InventoryItem.instance.identifier:rawScan.type",
+        "path": "InventoryItem.instance.identifier.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "FMD_BARCODE",
+              "system": "https://afriscic.github.io/EAHP_Interoperabillty//CodeSystem/eahp-identifier-type-cs"
+            }
+          ]
+        }
+      },
+      {
+        "id": "InventoryItem.instance.identifier:serialNumber",
+        "path": "InventoryItem.instance.identifier",
+        "sliceName": "serialNumber",
+        "short": "Parsed Serial Number",
+        "definition": "The distinct serial number component extracted from the package identifier. The distinct serial number component extracted from the package identifier. Note: This string is NOT globally unique on its own. It must be scoped by the Product BarCode to be unique.",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "InventoryItem.instance.identifier:serialNumber.type",
+        "path": "InventoryItem.instance.identifier.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "SNO",
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+            }
+          ]
+        }
+      },
+      {
+        "id": "InventoryItem.instance.identifier:vendorAssigned",
+        "path": "InventoryItem.instance.identifier",
+        "sliceName": "vendorAssigned",
+        "short": "Robot-generated Unique ID (for Unit Doses/Bags)",
+        "definition": "A locally unique identifier assigned by the automation system to a specific unit dose or compounded preparation. This ID is generated by the robot (e.g., a pick-id or waffle-id) and is unique only within the namespace of that specific machine or hospital system.",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "InventoryItem.instance.identifier:vendorAssigned.type",
+        "path": "InventoryItem.instance.identifier.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "RI",
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+            }
+          ]
+        }
+      },
+      {
+        "id": "InventoryItem.instance.identifier:productBarCode",
+        "path": "InventoryItem.instance.identifier",
+        "sliceName": "productBarCode",
+        "short": "Scanned Product Code (GTIN, PZN, etc)",
+        "definition": "The portion of the barcode identifying the product (e.g. GTIN from a GS1 string).",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "InventoryItem.instance.identifier:productBarCode.type",
+        "path": "InventoryItem.instance.identifier.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "PRODUCT_BARCODE",
+              "system": "https://afriscic.github.io/EAHP_Interoperabillty//CodeSystem/eahp-identifier-type-cs"
+            }
+          ]
+        }
+      },
+      {
+        "id": "InventoryItem.instance.lotNumber",
+        "path": "InventoryItem.instance.lotNumber",
+        "mustSupport": true
+      },
+      {
+        "id": "InventoryItem.instance.expiry",
+        "path": "InventoryItem.instance.expiry",
+        "mustSupport": true
+      },
+      {
+        "id": "InventoryItem.instance.location",
+        "path": "InventoryItem.instance.location",
+        "mustSupport": true
+      },
+      {
+        "id": "InventoryItem.productReference",
+        "path": "InventoryItem.productReference",
+        "mustSupport": true
+      }
+    ]
+  }
+}

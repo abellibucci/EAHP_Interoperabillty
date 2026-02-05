@@ -1,0 +1,16 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "EAHPMedicineHandlingAutomationVS",
+  "id": "eahp-medicine-handling-automation-vs",
+  "title": "EAHP Medicine Handling Automation Value Set",
+  "description": "Value set containing codes for EAHP medicine handling automation types.",
+  "url": "https://afriscic.github.io/EAHP_Interoperabillty//ValueSet/eahp-medicine-handling-automation-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "https://afriscic.github.io/EAHP_Interoperabillty//CodeSystem/eahp-medicine-handling-automation-types"
+      }
+    ]
+  }
+}

@@ -2,16 +2,31 @@
   {
     "No": 10,
     "GTIN": "02012345678903",
-    "BATCH": "BARCELONA2026"
+    "BATCH": "BARCELONA2026",
+    "HISCode": "MED001",
+    "MedicationName": "Demo Medication A 100mg Tablets",
+    "Manufacturer": "PharmaCorp",
+    "NetContentPerPack": 30,
+    "ExpiryDate": "2026-03-20"
   },
   {
     "No": 5,
     "GTIN": "02011111111118",
-    "BATCH": "EAHP"
+    "BATCH": "EAHP",
+    "HISCode": "MED002",
+    "MedicationName": "Demo Medication B 500mg Capsules",
+    "Manufacturer": "HealthMeds Inc",
+    "NetContentPerPack": 20,
+    "ExpiryDate": "2026-12-31"
   },
   {
     "No": 2,
     "GTIN": "02064721898122",
-    "BATCH": "CONGRESS"
+    "BATCH": "CONGRESS",
+    "HISCode": "MED003",
+    "MedicationName": "Demo Medication C 250mg Syrup",
+    "Manufacturer": "MediGlobal",
+    "NetContentPerPack": 1,
+    "ExpiryDate": "2027-06-30"
   }
 ]

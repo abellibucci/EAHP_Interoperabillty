@@ -1,0 +1,44 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "MedicationEAHP",
+  "url": "https://afriscic.github.io/EAHP_Interoperabillty//StructureDefinition/MedicationEAHP",
+  "name": "MedicationEAHP",
+  "title": "Medication EAHP Interoperability",
+  "status": "draft",
+  "description": "A wrapper profile treating Medication as a logistical SKU. Used for automations (leaves) where the HIS Code is the Resource ID. This resource can represent a physical item (Brand) or a virtual concept (Generic Formulation).",
+  "fhirVersion": "5.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Medication",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Medication",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Medication.id",
+        "path": "Medication.id",
+        "short": "The HIS Item Code (e.g. M00345)",
+        "definition": "The id of the resource MUST be the HIS Item Code. This allows direct addressing (e.g., /Medication/M00345). MUST match regex [A-Za-z0-9\\-\\.]{1,64}",
+        "min": 1
+      },
+      {
+        "id": "Medication.code",
+        "path": "Medication.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.code.text",
+        "path": "Medication.code.text",
+        "short": "Description of the item",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.status",
+        "path": "Medication.status",
+        "mustSupport": true
+      }
+    ]
+  }
+}

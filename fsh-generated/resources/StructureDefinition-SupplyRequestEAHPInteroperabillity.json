@@ -1,0 +1,145 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "SupplyRequestEAHPInteroperabillity",
+  "url": "https://afriscic.github.io/EAHP_Interoperabillty//StructureDefinition/SupplyRequestEAHPInteroperabillity",
+  "name": "SupplyRequestEAHPInteroperabillity",
+  "title": "SupplyRequest EAHP Interoperability",
+  "status": "draft",
+  "description": "SupplyRequest profile for EAHP Interoperability SIG.",
+  "fhirVersion": "5.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "SupplyRequest",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/SupplyRequest",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "SupplyRequest.identifier",
+        "path": "SupplyRequest.identifier",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "type"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "List of identifiers , should contain at least a request header id and a line header id. The couple (request header id, line header id) must be unique.",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "SupplyRequest.identifier:requestId",
+        "path": "SupplyRequest.identifier",
+        "sliceName": "requestId",
+        "short": "The ID of a complete supply request, spanning multiple medicines/inventory items.",
+        "definition": "Normally ",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "SupplyRequest.identifier:requestId.type",
+        "path": "SupplyRequest.identifier.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "RequestId",
+              "system": "https://afriscic.github.io/EAHP_Interoperabillty//CodeSystem/eahp-supply-request-identifier-type-cs"
+            }
+          ]
+        }
+      },
+      {
+        "id": "SupplyRequest.priority",
+        "path": "SupplyRequest.priority",
+        "mustSupport": true
+      },
+      {
+        "id": "SupplyRequest.item",
+        "path": "SupplyRequest.item",
+        "short": "Requested product must be a Medication or InventoryItem",
+        "definition": "The requested supply item, limited to references to Medication or InventoryItem resources.",
+        "type": [
+          {
+            "code": "CodeableReference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Medication",
+              "http://hl7.org/fhir/StructureDefinition/InventoryItem"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SupplyRequest.item.concept",
+        "path": "SupplyRequest.item.concept",
+        "max": "0"
+      },
+      {
+        "id": "SupplyRequest.quantity",
+        "path": "SupplyRequest.quantity",
+        "short": "The count of indivisible logistical units (e.g., pills, packs) requested.",
+        "definition": "The quantity of the specified item to be supplied, expressed strictly as a count of physical, atomic units (Indivisible Logistical Units). This represents the handling unit of the automation (e.g., 1 vial, 1 blister, 1 box) rather than the clinical strength or volume.",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "https://afriscic.github.io/EAHP_Interoperabillty//StructureDefinition/eahp-logistical-quantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SupplyRequest.authoredOn",
+        "path": "SupplyRequest.authoredOn",
+        "mustSupport": true
+      },
+      {
+        "id": "SupplyRequest.requester",
+        "path": "SupplyRequest.requester",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/Device"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SupplyRequest.deliverFrom",
+        "path": "SupplyRequest.deliverFrom",
+        "short": "The automatic location reperesenting the automation that should supply the medications",
+        "definition": "The specific location representing the automation that should supply the items. This is typically used in point-to-point setups where the source is known. It is optional to allow for central orchestration where the specific fulfillment source is determined dynamically.",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Location"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "SupplyRequest.deliverTo",
+        "path": "SupplyRequest.deliverTo",
+        "short": "The destination of the supply request. If it must be delivered to an automation, this must be a location linked with the device representing the automation.",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization",
+              "http://hl7.org/fhir/StructureDefinition/Location"
+            ]
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

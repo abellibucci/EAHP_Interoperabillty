@@ -1,0 +1,66 @@
+{
+  "resourceType": "InventoryItem",
+  "id": "eae372e8-9fff-49e2-96f3-8e5f84a5aa68",
+  "meta": {
+    "profile": [
+      "https://afriscic.github.io/EAHP_Interoperabillty//StructureDefinition/InventoryItemEAHPInteroperability"
+    ]
+  },
+  "baseUnit": {
+    "coding": [
+      {
+        "code": "indivisible-logistical-unit",
+        "system": "https://afriscic.github.io/EAHP_Interoperabillty//CodeSystem/eahp-logistics-unit-cs"
+      }
+    ]
+  },
+  "netContent": {
+    "unit": "Indivisible Logistical Unit",
+    "system": "http://example.org/CodeSystem/eahp-logistics-unit-cs",
+    "code": "indivisible-logistical-unit",
+    "value": 1
+  },
+  "instance": {
+    "identifier": [
+      {
+        "type": {
+          "coding": [
+            {
+              "code": "FMD_BARCODE",
+              "system": "https://afriscic.github.io/EAHP_Interoperabillty//CodeSystem/eahp-identifier-type-cs"
+            }
+          ]
+        },
+        "value": "\u001d010206472189812210CONGRESS\u001d17270630219sJp22bTdd"
+      },
+      {
+        "type": {
+          "coding": [
+            {
+              "code": "SNO",
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+            }
+          ]
+        },
+        "value": "9sJp22bTdd"
+      },
+      {
+        "type": {
+          "coding": [
+            {
+              "code": "PRODUCT_BARCODE",
+              "system": "https://afriscic.github.io/EAHP_Interoperabillty//CodeSystem/eahp-identifier-type-cs"
+            }
+          ]
+        },
+        "value": "02064721898122"
+      }
+    ],
+    "lotNumber": "CONGRESS",
+    "expiry": "2027-06-30"
+  },
+  "status": "active",
+  "productReference": {
+    "reference": "Medication/MED003"
+  }
+}

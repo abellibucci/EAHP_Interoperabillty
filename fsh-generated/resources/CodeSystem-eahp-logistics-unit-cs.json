@@ -1,0 +1,18 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "EAHPLogisticsUnitCS",
+  "id": "eahp-logistics-unit-cs",
+  "title": "EAHP Logistics Units",
+  "description": "Custom units of measure for abstracting pharmacy automation logistics.",
+  "url": "https://afriscic.github.io/EAHP_Interoperabillty//CodeSystem/eahp-logistics-unit-cs",
+  "concept": [
+    {
+      "code": "indivisible-logistical-unit",
+      "display": "Indivisible Logistical Unit",
+      "definition": "The atomic, physical unit of inventory. It represents a quantity of '1' that cannot be subdivided further without destroying the item or altering its integrity."
+    }
+  ],
+  "count": 1
+}

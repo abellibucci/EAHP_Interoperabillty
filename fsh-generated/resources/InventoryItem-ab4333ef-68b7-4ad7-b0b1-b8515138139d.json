@@ -1,0 +1,66 @@
+{
+  "resourceType": "InventoryItem",
+  "id": "ab4333ef-68b7-4ad7-b0b1-b8515138139d",
+  "meta": {
+    "profile": [
+      "https://afriscic.github.io/EAHP_Interoperabillty//StructureDefinition/InventoryItemEAHPInteroperability"
+    ]
+  },
+  "baseUnit": {
+    "coding": [
+      {
+        "code": "indivisible-logistical-unit",
+        "system": "https://afriscic.github.io/EAHP_Interoperabillty//CodeSystem/eahp-logistics-unit-cs"
+      }
+    ]
+  },
+  "netContent": {
+    "unit": "Indivisible Logistical Unit",
+    "system": "http://example.org/CodeSystem/eahp-logistics-unit-cs",
+    "code": "indivisible-logistical-unit",
+    "value": 30
+  },
+  "instance": {
+    "identifier": [
+      {
+        "type": {
+          "coding": [
+            {
+              "code": "FMD_BARCODE",
+              "system": "https://afriscic.github.io/EAHP_Interoperabillty//CodeSystem/eahp-identifier-type-cs"
+            }
+          ]
+        },
+        "value": "\u001d010201234567890310BARCELONA2026\u001d1726032021MglSChMlf2"
+      },
+      {
+        "type": {
+          "coding": [
+            {
+              "code": "SNO",
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+            }
+          ]
+        },
+        "value": "MglSChMlf2"
+      },
+      {
+        "type": {
+          "coding": [
+            {
+              "code": "PRODUCT_BARCODE",
+              "system": "https://afriscic.github.io/EAHP_Interoperabillty//CodeSystem/eahp-identifier-type-cs"
+            }
+          ]
+        },
+        "value": "02012345678903"
+      }
+    ],
+    "lotNumber": "BARCELONA2026",
+    "expiry": "2026-03-20"
+  },
+  "status": "active",
+  "productReference": {
+    "reference": "Medication/MED001"
+  }
+}

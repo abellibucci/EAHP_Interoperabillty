@@ -1,0 +1,410 @@
+[
+  {
+    "outputFile": "CodeSystem-eahp-identifier-type-cs.json",
+    "fshName": "EAHPIdentifierTypeCS",
+    "fshType": "CodeSystem",
+    "fshFile": "resources/InventoryItem.fsh",
+    "startLine": 55,
+    "endLine": 60
+  },
+  {
+    "outputFile": "CodeSystem-eahp-logistics-unit-cs.json",
+    "fshName": "EAHPLogisticsUnitCS",
+    "fshType": "CodeSystem",
+    "fshFile": "resources/Quantity.fsh",
+    "startLine": 15,
+    "endLine": 19
+  },
+  {
+    "outputFile": "CodeSystem-eahp-medicine-handling-automation-types.json",
+    "fshName": "EAHPMedicineHandlingAutomationTypes",
+    "fshType": "CodeSystem",
+    "fshFile": "resources/Device.fsh",
+    "startLine": 27,
+    "endLine": 35
+  },
+  {
+    "outputFile": "CodeSystem-eahp-supply-request-identifier-type-cs.json",
+    "fshName": "EAHPSupplyRequestIdentifierTypeCS",
+    "fshType": "CodeSystem",
+    "fshFile": "resources/SupplyRequest.fsh",
+    "startLine": 39,
+    "endLine": 43
+  },
+  {
+    "outputFile": "Device-dev-adc-cardio-01.json",
+    "fshName": "dev-adc-cardio-01",
+    "fshType": "Instance",
+    "fshFile": "examples/MedicineHandlingDevices-Examples.fsh",
+    "startLine": 16,
+    "endLine": 30
+  },
+  {
+    "outputFile": "Device-dev-compounding-robot-01.json",
+    "fshName": "dev-compounding-robot-01",
+    "fshType": "Instance",
+    "fshFile": "examples/MedicineHandlingDevices-Examples.fsh",
+    "startLine": 48,
+    "endLine": 61
+  },
+  {
+    "outputFile": "Device-dev-robot-wholepack-01.json",
+    "fshName": "dev-robot-wholepack-01",
+    "fshType": "Instance",
+    "fshFile": "examples/MedicineHandlingDevices-Examples.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "Device-dev-smartcart-cardio-01.json",
+    "fshName": "dev-smartcart-cardio-01",
+    "fshType": "Instance",
+    "fshFile": "examples/MedicineHandlingDevices-Examples.fsh",
+    "startLine": 63,
+    "endLine": 76
+  },
+  {
+    "outputFile": "Device-dev-unidose-robot-01.json",
+    "fshName": "dev-unidose-robot-01",
+    "fshType": "Instance",
+    "fshFile": "examples/MedicineHandlingDevices-Examples.fsh",
+    "startLine": 32,
+    "endLine": 46
+  },
+  {
+    "outputFile": "InventoryItem-3089ca05-81d3-4641-9907-ba8c343a13b0.json",
+    "fshName": "3089ca05-81d3-4641-9907-ba8c343a13b0",
+    "fshType": "Instance",
+    "fshFile": "examples/generated/Generated-InventoryItems.fsh",
+    "startLine": 140,
+    "endLine": 155
+  },
+  {
+    "outputFile": "InventoryItem-370a043d-e196-4381-bc9e-cbe61c9f161e.json",
+    "fshName": "370a043d-e196-4381-bc9e-cbe61c9f161e",
+    "fshType": "Instance",
+    "fshFile": "examples/generated/Generated-InventoryItems.fsh",
+    "startLine": 242,
+    "endLine": 257
+  },
+  {
+    "outputFile": "InventoryItem-40ee05ff-a65a-4006-a6bc-7e24dbc6b043.json",
+    "fshName": "40ee05ff-a65a-4006-a6bc-7e24dbc6b043",
+    "fshType": "Instance",
+    "fshFile": "examples/generated/Generated-InventoryItems.fsh",
+    "startLine": 225,
+    "endLine": 240
+  },
+  {
+    "outputFile": "InventoryItem-433166d6-50b3-48b6-9e46-da00f1168e81.json",
+    "fshName": "433166d6-50b3-48b6-9e46-da00f1168e81",
+    "fshType": "Instance",
+    "fshFile": "examples/generated/Generated-InventoryItems.fsh",
+    "startLine": 4,
+    "endLine": 19
+  },
+  {
+    "outputFile": "InventoryItem-7ed1f993-37a3-403c-8435-579cf53ec1bd.json",
+    "fshName": "7ed1f993-37a3-403c-8435-579cf53ec1bd",
+    "fshType": "Instance",
+    "fshFile": "examples/generated/Generated-InventoryItems.fsh",
+    "startLine": 89,
+    "endLine": 104
+  },
+  {
+    "outputFile": "InventoryItem-7f95158f-7ab8-4ffb-8e11-a6b9270dc553.json",
+    "fshName": "7f95158f-7ab8-4ffb-8e11-a6b9270dc553",
+    "fshType": "Instance",
+    "fshFile": "examples/generated/Generated-InventoryItems.fsh",
+    "startLine": 55,
+    "endLine": 70
+  },
+  {
+    "outputFile": "InventoryItem-80572662-93fd-4be2-b7c4-cbfb126d94b7.json",
+    "fshName": "80572662-93fd-4be2-b7c4-cbfb126d94b7",
+    "fshType": "Instance",
+    "fshFile": "examples/generated/Generated-InventoryItems.fsh",
+    "startLine": 38,
+    "endLine": 53
+  },
+  {
+    "outputFile": "InventoryItem-8d043738-bf48-4a2b-aba5-a4a9e8744f63.json",
+    "fshName": "8d043738-bf48-4a2b-aba5-a4a9e8744f63",
+    "fshType": "Instance",
+    "fshFile": "examples/InventoryItems-IbuprofenTablet.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "InventoryItem-9042a2ba-724c-47e4-b64c-6054da9dd4fa.json",
+    "fshName": "9042a2ba-724c-47e4-b64c-6054da9dd4fa",
+    "fshType": "Instance",
+    "fshFile": "examples/InventoryItems-IbuprofenTablet.fsh",
+    "startLine": 35,
+    "endLine": 47
+  },
+  {
+    "outputFile": "InventoryItem-9c5d8cbd-faa2-444b-842c-15c878edda04.json",
+    "fshName": "9c5d8cbd-faa2-444b-842c-15c878edda04",
+    "fshType": "Instance",
+    "fshFile": "examples/generated/Generated-InventoryItems.fsh",
+    "startLine": 208,
+    "endLine": 223
+  },
+  {
+    "outputFile": "InventoryItem-ab4333ef-68b7-4ad7-b0b1-b8515138139d.json",
+    "fshName": "ab4333ef-68b7-4ad7-b0b1-b8515138139d",
+    "fshType": "Instance",
+    "fshFile": "examples/generated/Generated-InventoryItems.fsh",
+    "startLine": 72,
+    "endLine": 87
+  },
+  {
+    "outputFile": "InventoryItem-b4f040f8-629c-4c33-8853-a89d15f5ea94.json",
+    "fshName": "b4f040f8-629c-4c33-8853-a89d15f5ea94",
+    "fshType": "Instance",
+    "fshFile": "examples/generated/Generated-InventoryItems.fsh",
+    "startLine": 106,
+    "endLine": 121
+  },
+  {
+    "outputFile": "InventoryItem-be461539-4830-4c31-ace4-c6de8d35af99.json",
+    "fshName": "be461539-4830-4c31-ace4-c6de8d35af99",
+    "fshType": "Instance",
+    "fshFile": "examples/generated/Generated-InventoryItems.fsh",
+    "startLine": 157,
+    "endLine": 172
+  },
+  {
+    "outputFile": "InventoryItem-c91afb75-3af9-4bff-96e1-129d4910d71a.json",
+    "fshName": "c91afb75-3af9-4bff-96e1-129d4910d71a",
+    "fshType": "Instance",
+    "fshFile": "examples/generated/Generated-InventoryItems.fsh",
+    "startLine": 276,
+    "endLine": 291
+  },
+  {
+    "outputFile": "InventoryItem-d74359b6-34cc-462d-ab63-5927e2ecbf60.json",
+    "fshName": "d74359b6-34cc-462d-ab63-5927e2ecbf60",
+    "fshType": "Instance",
+    "fshFile": "examples/generated/Generated-InventoryItems.fsh",
+    "startLine": 174,
+    "endLine": 189
+  },
+  {
+    "outputFile": "InventoryItem-e2d2688f-2854-48ac-a87a-cb6f4105b36c.json",
+    "fshName": "e2d2688f-2854-48ac-a87a-cb6f4105b36c",
+    "fshType": "Instance",
+    "fshFile": "examples/InventoryItems-IbuprofenTablet.fsh",
+    "startLine": 18,
+    "endLine": 33
+  },
+  {
+    "outputFile": "InventoryItem-eae372e8-9fff-49e2-96f3-8e5f84a5aa68.json",
+    "fshName": "eae372e8-9fff-49e2-96f3-8e5f84a5aa68",
+    "fshType": "Instance",
+    "fshFile": "examples/generated/Generated-InventoryItems.fsh",
+    "startLine": 259,
+    "endLine": 274
+  },
+  {
+    "outputFile": "InventoryItem-f2bcd3dd-cbc7-4385-8988-31eb4601eff9.json",
+    "fshName": "f2bcd3dd-cbc7-4385-8988-31eb4601eff9",
+    "fshType": "Instance",
+    "fshFile": "examples/generated/Generated-InventoryItems.fsh",
+    "startLine": 21,
+    "endLine": 36
+  },
+  {
+    "outputFile": "InventoryItem-f3def569-5063-4294-a342-f73e33727583.json",
+    "fshName": "f3def569-5063-4294-a342-f73e33727583",
+    "fshType": "Instance",
+    "fshFile": "examples/generated/Generated-InventoryItems.fsh",
+    "startLine": 191,
+    "endLine": 206
+  },
+  {
+    "outputFile": "InventoryItem-f7a3c8e5-2b94-4d16-9a87-3e5f6d1c8b42.json",
+    "fshName": "f7a3c8e5-2b94-4d16-9a87-3e5f6d1c8b42",
+    "fshType": "Instance",
+    "fshFile": "examples/InventoryItems-IbuprofenTabletMultiple.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "InventoryItem-f97bf6d7-f107-44f3-8046-3ae8877adbb3.json",
+    "fshName": "f97bf6d7-f107-44f3-8046-3ae8877adbb3",
+    "fshType": "Instance",
+    "fshFile": "examples/generated/Generated-InventoryItems.fsh",
+    "startLine": 123,
+    "endLine": 138
+  },
+  {
+    "outputFile": "InventoryReport-InventoryReport-GlobalPharmaIbuprofen-Example.json",
+    "fshName": "InventoryReport-GlobalPharmaIbuprofen-Example",
+    "fshType": "Instance",
+    "fshFile": "examples/InventoryReport-IbuprofenTablet-Example.fsh",
+    "startLine": 1,
+    "endLine": 35
+  },
+  {
+    "outputFile": "Location-loc-adc-cardio-01.json",
+    "fshName": "loc-adc-cardio-01",
+    "fshType": "Instance",
+    "fshFile": "examples/Locations.fsh",
+    "startLine": 49,
+    "endLine": 59
+  },
+  {
+    "outputFile": "Location-loc-pharmacy-central-room.json",
+    "fshName": "loc-pharmacy-central-room",
+    "fshType": "Instance",
+    "fshFile": "examples/Locations.fsh",
+    "startLine": 5,
+    "endLine": 15
+  },
+  {
+    "outputFile": "Location-loc-robot-main.json",
+    "fshName": "loc-robot-main",
+    "fshType": "Instance",
+    "fshFile": "examples/Locations.fsh",
+    "startLine": 35,
+    "endLine": 46
+  },
+  {
+    "outputFile": "Location-loc-ward-cardio.json",
+    "fshName": "loc-ward-cardio",
+    "fshType": "Instance",
+    "fshFile": "examples/Locations.fsh",
+    "startLine": 18,
+    "endLine": 28
+  },
+  {
+    "outputFile": "Medication-M00345.json",
+    "fshName": "M00345",
+    "fshType": "Instance",
+    "fshFile": "examples/Medication-Brand-IbuprofenTablet-Example.fsh",
+    "startLine": 1,
+    "endLine": 6
+  },
+  {
+    "outputFile": "Medication-M007802.json",
+    "fshName": "M007802",
+    "fshType": "Instance",
+    "fshFile": "examples/Medication-GenericFormulation-IbuprofenTablets-Example.fsh",
+    "startLine": 1,
+    "endLine": 6
+  },
+  {
+    "outputFile": "Medication-MED001.json",
+    "fshName": "MED001",
+    "fshType": "Instance",
+    "fshFile": "examples/generated/Generated-Medications.fsh",
+    "startLine": 4,
+    "endLine": 9
+  },
+  {
+    "outputFile": "Medication-MED002.json",
+    "fshName": "MED002",
+    "fshType": "Instance",
+    "fshFile": "examples/generated/Generated-Medications.fsh",
+    "startLine": 11,
+    "endLine": 16
+  },
+  {
+    "outputFile": "Medication-MED003.json",
+    "fshName": "MED003",
+    "fshType": "Instance",
+    "fshFile": "examples/generated/Generated-Medications.fsh",
+    "startLine": 18,
+    "endLine": 23
+  },
+  {
+    "outputFile": "StructureDefinition-DeviceEAHPInteroperability.json",
+    "fshName": "DeviceEAHPInteroperability",
+    "fshType": "Profile",
+    "fshFile": "resources/Device.fsh",
+    "startLine": 1,
+    "endLine": 24
+  },
+  {
+    "outputFile": "StructureDefinition-InventoryItemEAHPInteroperability.json",
+    "fshName": "InventoryItemEAHPInteroperability",
+    "fshType": "Profile",
+    "fshFile": "resources/InventoryItem.fsh",
+    "startLine": 1,
+    "endLine": 54
+  },
+  {
+    "outputFile": "StructureDefinition-MedicationEAHP.json",
+    "fshName": "MedicationEAHP",
+    "fshType": "Profile",
+    "fshFile": "resources/Medication.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "StructureDefinition-SupplyDeliveryEAHPInteroperability.json",
+    "fshName": "SupplyDeliveryEAHPInteroperability",
+    "fshType": "Profile",
+    "fshFile": "resources/SupplyDelivery.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "StructureDefinition-SupplyRequestEAHPInteroperabillity.json",
+    "fshName": "SupplyRequestEAHPInteroperabillity",
+    "fshType": "Profile",
+    "fshFile": "resources/SupplyRequest.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "StructureDefinition-eahp-logistical-quantity.json",
+    "fshName": "EAHPLogisticalQuantity",
+    "fshType": "Profile",
+    "fshFile": "resources/Quantity.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "StructureDefinition-supplier-device.json",
+    "fshName": "SupplierDevice",
+    "fshType": "Extension",
+    "fshFile": "resources/SupplyDelivery.fsh",
+    "startLine": 16,
+    "endLine": 20
+  },
+  {
+    "outputFile": "SupplyDelivery-SupplyDelivery-IbuprofenTabletPack-Example.json",
+    "fshName": "SupplyDelivery-IbuprofenTabletPack-Example",
+    "fshType": "Instance",
+    "fshFile": "examples/SupplyDelivery-IbuprofenTabletPack-Example.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "SupplyDelivery-SupplyDelivery-IbuprofenTabletUnit-Example.json",
+    "fshName": "SupplyDelivery-IbuprofenTabletUnit-Example",
+    "fshType": "Instance",
+    "fshFile": "examples/SupplyDelivery-IbuprofenTabletUnit-Example.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "SupplyRequest-SupplyRequest-IbuprofenTablet-Example.json",
+    "fshName": "SupplyRequest-IbuprofenTablet-Example",
+    "fshType": "Instance",
+    "fshFile": "examples/SupplyRequest-IbuprofenTablet-Example.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-eahp-medicine-handling-automation-vs.json",
+    "fshName": "EAHPMedicineHandlingAutomationVS",
+    "fshType": "ValueSet",
+    "fshFile": "resources/Device.fsh",
+    "startLine": 37,
+    "endLine": 41
+  }
+]
