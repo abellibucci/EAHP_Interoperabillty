@@ -484,9 +484,9 @@ $RECYCLE.BIN/
 # Claude Code
 CLAUDE.md
 .claude/
-# REMOVE GENERATED SUSHI FILES
-/template
+# FHIR IG Publisher
 /fsh-generated
+/template
 /input-cache
 /output
 /temp

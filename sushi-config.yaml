@@ -9,9 +9,90 @@ version: "0.0.1"
 packageId: "org.eahp.interoperability"
 copyrightYear: 2025
 releaseLabel: "0.0.1"
-dependencies: 
+dependencies:
   hl7.fhir.r5.core: 5.0.0
 menu:
   Index: index.html
   Artifacts: artifacts.html
+  Generated Examples: generated-examples.html
   Table of Contents: toc.html
+groups:
+  ResourceProfiles:
+    name: Resource Profiles
+    description: FHIR Resource Profiles defined in this IG
+    resources:
+      - StructureDefinition/DeviceEAHPInteroperability
+      - StructureDefinition/InventoryItemEAHPInteroperability
+      - StructureDefinition/MedicationEAHP
+      - StructureDefinition/SupplyDeliveryEAHPInteroperability
+      - StructureDefinition/SupplyRequestEAHPInteroperabillity
+  DataTypeProfiles:
+    name: Data Type Profiles
+    description: FHIR Data Type Profiles defined in this IG
+    resources:
+      - StructureDefinition/eahp-logistical-quantity
+  Extensions:
+    name: Extensions
+    description: FHIR Extensions defined in this IG
+    resources:
+      - StructureDefinition/supplier-device
+  CodeSystems:
+    name: Code Systems
+    description: Code Systems defined in this IG
+    resources:
+      - CodeSystem/eahp-medicine-handling-automation-types
+      - CodeSystem/eahp-identifier-type-cs
+      - CodeSystem/eahp-logistics-unit-cs
+      - CodeSystem/eahp-supply-request-identifier-type-cs
+  ValueSets:
+    name: Value Sets
+    description: Value Sets defined in this IG
+    resources:
+      - ValueSet/eahp-medicine-handling-automation-vs
+  Examples:
+    name: Examples
+    description: Example instances demonstrating real-world pharmacy automation scenarios
+    resources:
+      - Medication/M00345
+      - Medication/M007802
+      - Device/dev-robot-wholepack-01
+      - Device/dev-unidose-robot-01
+      - Device/dev-compounding-robot-01
+      - Device/dev-adc-cardio-01
+      - Device/dev-smartcart-cardio-01
+      - Location/loc-robot-main
+      - Location/loc-adc-cardio-01
+      - Location/loc-pharmacy-central-room
+      - Location/loc-ward-cardio
+      - InventoryItem/8d043738-bf48-4a2b-aba5-a4a9e8744f63
+      - InventoryItem/e2d2688f-2854-48ac-a87a-cb6f4105b36c
+      - InventoryItem/9042a2ba-724c-47e4-b64c-6054da9dd4fa
+      - InventoryItem/f7a3c8e5-2b94-4d16-9a87-3e5f6d1c8b42
+      - InventoryReport/InventoryReport-GlobalPharmaIbuprofen-Example
+      - SupplyRequest/SupplyRequest-IbuprofenTablet-Example
+      - SupplyDelivery/SupplyDelivery-IbuprofenTabletPack-Example
+      - SupplyDelivery/SupplyDelivery-IbuprofenTabletUnit-Example
+  GeneratedExamples:
+    name: Generated Examples
+    description: Auto-generated examples from barcode data (Demo Medications and Inventory Items)
+    resources:
+      - Medication/MED001
+      - InventoryItem/gen-inv-MED001-1
+      - InventoryItem/gen-inv-MED001-2
+      - InventoryItem/gen-inv-MED001-3
+      - InventoryItem/gen-inv-MED001-4
+      - InventoryItem/gen-inv-MED001-5
+      - InventoryItem/gen-inv-MED001-6
+      - InventoryItem/gen-inv-MED001-7
+      - InventoryItem/gen-inv-MED001-8
+      - InventoryItem/gen-inv-MED001-9
+      - InventoryItem/gen-inv-MED001-10
+      - Medication/MED002
+      - InventoryItem/gen-inv-MED002-1
+      - InventoryItem/gen-inv-MED002-2
+      - InventoryItem/gen-inv-MED002-3
+      - InventoryItem/gen-inv-MED002-4
+      - InventoryItem/gen-inv-MED002-5
+      - Medication/MED003
+      - InventoryItem/gen-inv-MED003-1
+      - InventoryItem/gen-inv-MED003-2
